@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASIPE CARREATA</title>
+</head>
+
+<body>
+    <header>
+        <img src="carreata.img/logotopo.png" id="logoFasipe">
+    </header>
+    
+    <h2>Cadastre-se para a Carreata!
+    </h2>
+
+<div class="formulario">
+
+    <form id="formAluno">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="text" name="matricula" placeholder="Matrícula" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+
+        <select name="curso" required>
+            <option value="" disabled selected hidden>Selecione o curso</option>
+            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+            <option value="direito">Direito</option>
+            <option value="biomed">Biomedicina</option>
+            <option value="cienciascont">Ciências Contábeis</option>
+            <option value="odontologia">Odontologia</option>
+            <option value="enfermagem">Enfermagem</option>
+            <option value="fisio">Fisioterapia</option>
+            <option value="esteticacosmetico">Estética e Cosmético</option>
+            <option value="nutricao">Nutrição</option>
+            <option value="psicologia">Psicologia</option>
+        </select>
+
+        <input type="tel" name="celular" placeholder="Celular" required>
+        <button id="botao" type="button">Proximo</button>
+    </form>
+
+    <div id="timer" style="display: none;" class="timer-container">
+        <div class="time-label">O Tempo Está Rolando</div>
+        <div id="countdown">02:00:00</div>
+    </div>
+
+    <div id="confirmacao" style="display:none;">
+        <h2>Parabéns Aluno!</h2>
+        <p>Você recebeu 1 ponto!</p>
+    </div>
+
+</div>
+<div id="formAluno2" style="display: none;">      
+        <input type="password" id="Senha"  placeholder="Crie uma Senha">
+        <input type="password" id="ConfirmarSenha" placeholder="Confirme a Senha">
+        <button type="button" onclick="finalizar()">Entrar</button>
+        <button type="button" onclick="voltarformAluno()">Voltar</button>
+
+</div>
+<div id="modalLocalizacao" style="display:none;">
+    <button onclick="voltarForm()">Voltar</button>  
+    <p>Você Autoriza Localização?</p>
+    <button onclick="autorizarLocalizacao()">Sim</button>
+    <button onclick="negarLocalizacao()">Não</button>
+</div>
+
+
+
+
+<script src="front.js"></script>  
+
+</body>
+</html>
