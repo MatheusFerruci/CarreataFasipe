@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #F8FFF8 0%, #E8F5E9 100%);
+    color: #1B1B1B;
+}
+
+header {
+    background: linear-gradient(90deg, #1B5E20, #43A047);
+    padding: 20px;
+    text-align: center;
+}
+
+#logoFasipe {
+    width: 220px;
+    max-width: 80%;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo h1 {
+    color: #1B5E20;
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.titulo p {
+    color: #444;
+    font-size: 16px;
+}
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    max-width: 430px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    text-align: center;
+    color: #1B5E20;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #1B5E20;
+    margin: 15px 0 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #2E7D32;
+    box-shadow: 0 0 5px rgba(46,125,50,0.3);
+}
+
+button {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.btn-principal {
+    background-color: #1B5E20;
+    color: white;
+}
+
+.btn-principal:hover {
+    background-color: #2E7D32;
+}
+
+.btn-secundario {
+    background-color: #1565C0;
+    color: white;
+}
+
+.btn-secundario:hover {
+    background-color: #0D47A1;
+}
+
+.btn-voltar {
+    background-color: #757575;
+    color: white;
+}
+
+.btn-voltar:hover {
+    background-color: #616161;
+}
+
+.btn-limpar {
+    background-color: #B71C1C;
+    color: white;
+}
+
+.btn-limpar:hover {
+    background-color: #8B0000;
+}
+
+#mensagemErro {
+    color: #B71C1C;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.info {
+    background-color: #F1F8E9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.info p {
+    margin-bottom: 8px;
+}
+
+.rota {
+    background-color: #E3F2FD;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#countdown {
+    font-size: 42px;
+    font-weight: bold;
+    color: #1B5E20;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#previewFoto {
+    display: none;
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.painel {
+    max-width: 650px;
+}
+
+.itemHistorico {
+    background-color: #F5F5F5;
+    padding: 12px;
+    border-left: 5px solid #1B5E20;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.itemHistorico p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.fotoHistorico{
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #1B5E20;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .titulo h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    #countdown {
+        font-size: 34px;
+    }
+}
